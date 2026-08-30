@@ -6,6 +6,8 @@ A local CLI for creating and managing a wallet backed by the official TON
 Version `0.1.0` is the first CLI release. The project is designed to run locally
 on a trusted computer and contains no backend, analytics, or telemetry.
 
+Developed and maintained by [FollowDragons](https://github.com/followdragons).
+
 > [!WARNING]
 > This program handles real funds. The code has passed automated tests and
 > mainnet checks, but it has not undergone an independent security audit. Test
@@ -214,3 +216,9 @@ The `tg-wallet-contract-reference/` directory contains a vendored snapshot of
 the official contract for reproducible verification of the BOC, storage, and
 opcodes. The exact source, commit, and license are recorded in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## License
+
+WalletTg Safe CLI is developed by FollowDragons and released under the
+[MIT License](LICENSE). The vendored official contract snapshot retains its
+upstream license as documented in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

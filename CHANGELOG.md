@@ -17,6 +17,7 @@ Initial WalletTg Safe CLI release.
 - public getter and balance inspection;
 - optional Windows DPAPI funding Wallet V4 store;
 - TON Center rate limiting, retry and safe error diagnostics;
+- MIT licensing and explicit FollowDragons authorship metadata;
 - unit/regression tests for contract encoding, BOC integrity and secret stores.
 
 ### Security fixes included
