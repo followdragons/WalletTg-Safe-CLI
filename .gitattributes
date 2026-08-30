@@ -1,0 +1,14 @@
+* text=auto
+
+*.ts text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.tolk text eol=lf
+*.fif text eol=lf
+*.toml text eol=lf
+*.svg text eol=lf
+
+*.boc binary
+
+# Preserve the pinned upstream snapshot without rewriting its historical EOF style.
+tg-wallet-contract-reference/** whitespace=-blank-at-eof

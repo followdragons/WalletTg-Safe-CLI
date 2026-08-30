@@ -1,0 +1,44 @@
+<svg width="920" height="320" viewBox="0 0 920 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Lazy WalletTg storage migration</title>
+  <desc id="desc">After config bytecode upgrade, account c4 remains old until the first successful request runs storage migration.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #ffffff; stroke: #334155; stroke-width: 1.5; }
+    .config { fill: #eef6ff; }
+    .process { fill: #fff8ed; }
+    .state { fill: #f8fafc; }
+    .title { font: 600 18px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; text-anchor: middle; }
+    .text { font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; text-anchor: middle; }
+    .muted { font: 13px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; text-anchor: middle; }
+    .line { stroke: #334155; stroke-width: 1.7; fill: none; marker-end: url(#arrow); }
+  </style>
+
+  <rect width="920" height="320" fill="#ffffff"/>
+
+  <rect class="box config" x="160" y="26" width="600" height="72" rx="6"/>
+  <text class="title" x="460" y="57">config[-123]: WalletTg bytecode rev01</text>
+  <text class="muted" x="460" y="80">Updated rev00 → rev01 by validator voting</text>
+
+  <text class="muted" x="460" y="124">Then each deployed wallet account lazily migrates its c4</text>
+
+  <rect class="box state" x="58" y="198" width="270" height="78" rx="6"/>
+  <text class="title" x="193" y="229">wallet account c4</text>
+  <text class="text" x="193" y="254">Still has Storage prefix 0x00</text>
+
+  <rect class="box process" x="356" y="178" width="208" height="118" rx="6"/>
+  <text class="title" x="460" y="212">First valid request</text>
+  <text class="text" x="460" y="238">Storage.load()</text>
+  <text class="text" x="460" y="260">runMigrationAndUpdateC4()</text>
+  <text class="muted" x="460" y="281">contract.setData(new Storage)</text>
+
+  <rect class="box state" x="592" y="198" width="270" height="78" rx="6"/>
+  <text class="title" x="727" y="229">wallet account c4</text>
+  <text class="text" x="727" y="254">Now has Storage prefix 0x01</text>
+
+  <path class="line" d="M 328 237 L 354 237"/>
+  <path class="line" d="M 564 237 L 590 237"/>
+</svg>

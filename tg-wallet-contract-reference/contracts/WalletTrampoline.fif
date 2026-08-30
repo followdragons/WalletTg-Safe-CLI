@@ -1,0 +1,40 @@
+#!/usr/bin/env fift -s
+"Asm.fif" include
+
+/*
+    This is the on-chain "Telegram wallet" contract deployed to each account.
+    Essentially, it does `JMP to config[-123]`: WalletTg's bytecode is stored in config.
+
+    If a million users create wallets, a million tiny trampoline contracts are deployed.
+  All of them jump to bytecode from config.
+
+    This trampoline will never change, but WalletTg will. After a new WalletTg revision is made,
+  validators vote for a new config, and new bytecode atomically updates wallet logic for all users.
+    So,
+    - every Telegram account always uses the same latest contract logic in the blockchain
+    - even if a client device is outdated, it's okay: the contract stays backwards compatible
+    - storage, the account's c4 register, keeps the previous shape until auto-migrated on the first message
+
+    Optimization: accept ordinary top-ups immediately, without looking up config dict and invoking WalletTg.
+  More precisely, exit if "bits < 512": `SignedRequest` starts with signature.
+  Top-ups, text messages, bounced messages, and garbage requests cost nothing.
+
+    Note: `MYCODE` inside WalletTg will return this trampoline code!
+*/
+<{
+  SETCP0
+  DUP IFNOT:<{        // method_id 0 = internal
+    s1 PUSH           // copy body_slice
+    SBITS             // n_bits of body_slice
+    9 PUSHPOW2 LESS   // n_bits < 512, -1 or 0
+    0 THROWIF         // n_bits < 512: exit 0
+  }>
+  -123 PUSHINT        // ... idx-in-config
+  CONFIGOPTPARAM      // ... cell | null, but we suppose it exists
+  CTOS BLESS          // ... cont
+  DUP c3 POPCTR       // ... cont
+  JMPX                // ... jmp to WalletTg (internal SignedRequest / external / get fun)
+}>c
+
+// use `acton run build-trampoline` to regenerate boc
+2 boc+>B "contracts/WalletTrampoline.boc" B>file

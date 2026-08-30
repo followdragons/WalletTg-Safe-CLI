@@ -1,0 +1,304 @@
+{
+  "timestamp": 1787820577,
+  "opcodes": {
+    "0xdbef47ea": {
+      "min_gas": 3739,
+      "max_gas": 3739,
+      "avg_gas": 3739,
+      "samples": 1,
+      "all_values": [
+        3739
+      ]
+    },
+    "0x3d948917": {
+      "min_gas": 3965,
+      "max_gas": 3965,
+      "avg_gas": 3965,
+      "samples": 1,
+      "all_values": [
+        3965
+      ]
+    },
+    "0x3c79c5b6": {
+      "min_gas": 26325,
+      "max_gas": 26325,
+      "avg_gas": 26325,
+      "samples": 1,
+      "all_values": [
+        26325
+      ]
+    }
+  },
+  "trace_chains": {
+    "test e2e full chain: EXTERNAL send 1 message::trace#5": {
+      "test_name": "test e2e full chain: EXTERNAL send 1 message",
+      "trace_name": "e2e full-chain EXTERNAL send 1",
+      "tx_count": 2,
+      "total_gas_used": 3869,
+      "total_gas_fees": 257935,
+      "total_forward_fees": 48890,
+      "total_fees": 439447
+    },
+    "test e2e full chain: EXTERNAL send 32 messages::trace#4": {
+      "test_name": "test e2e full chain: EXTERNAL send 32 messages",
+      "trace_name": "e2e setup top up WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 44446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: EXTERNAL send 32 messages::trace#2": {
+      "test_name": "test e2e full chain: EXTERNAL send 32 messages",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: EXTERNAL change key::trace#5": {
+      "test_name": "test e2e full chain: EXTERNAL change key",
+      "trace_name": "e2e full-chain EXTERNAL change key",
+      "tx_count": 1,
+      "total_gas_used": 3813,
+      "total_gas_fees": 254201,
+      "total_forward_fees": 0,
+      "total_fees": 428069
+    },
+    "test e2e full chain: EXTERNAL change key::trace#2": {
+      "test_name": "test e2e full chain: EXTERNAL change key",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: INTERNAL change key::trace#2": {
+      "test_name": "test e2e full chain: INTERNAL change key",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: INTERNAL send 32 messages::trace#5": {
+      "test_name": "test e2e full chain: INTERNAL send 32 messages",
+      "trace_name": "e2e full-chain INTERNAL send 32",
+      "tx_count": 33,
+      "total_gas_used": 36213,
+      "total_gas_fees": 2414233,
+      "total_forward_fees": 1729994,
+      "total_fees": 3196441
+    },
+    "test e2e full chain: INTERNAL change key::trace#4": {
+      "test_name": "test e2e full chain: INTERNAL change key",
+      "trace_name": "e2e setup top up WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 44446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: EXTERNAL send 1 message::trace#3": {
+      "test_name": "test e2e full chain: EXTERNAL send 1 message",
+      "trace_name": "e2e setup deploy WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 76446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: EXTERNAL send 32 messages::trace#3": {
+      "test_name": "test e2e full chain: EXTERNAL send 32 messages",
+      "trace_name": "e2e setup deploy WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 76446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: INTERNAL send 32 messages::trace#4": {
+      "test_name": "test e2e full chain: INTERNAL send 32 messages",
+      "trace_name": "e2e setup top up WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 44446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: INTERNAL send 1 message::trace#4": {
+      "test_name": "test e2e full chain: INTERNAL send 1 message",
+      "trace_name": "e2e setup top up WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 44446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: EXTERNAL change key::trace#1": {
+      "test_name": "test e2e full chain: EXTERNAL change key",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: EXTERNAL change key::trace#3": {
+      "test_name": "test e2e full chain: EXTERNAL change key",
+      "trace_name": "e2e setup deploy WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 76446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: INTERNAL send 1 message::trace#3": {
+      "test_name": "test e2e full chain: INTERNAL send 1 message",
+      "trace_name": "e2e setup deploy WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 76446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: INTERNAL change key::trace#1": {
+      "test_name": "test e2e full chain: INTERNAL change key",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: INTERNAL send 32 messages::trace#3": {
+      "test_name": "test e2e full chain: INTERNAL send 32 messages",
+      "trace_name": "e2e setup deploy WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 76446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: EXTERNAL send 1 message::trace#2": {
+      "test_name": "test e2e full chain: EXTERNAL send 1 message",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: INTERNAL change key::trace#3": {
+      "test_name": "test e2e full chain: INTERNAL change key",
+      "trace_name": "e2e setup deploy WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 76446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: INTERNAL send 1 message::trace#1": {
+      "test_name": "test e2e full chain: INTERNAL send 1 message",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: EXTERNAL send 1 message::trace#1": {
+      "test_name": "test e2e full chain: EXTERNAL send 1 message",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: EXTERNAL send 1 message::trace#4": {
+      "test_name": "test e2e full chain: EXTERNAL send 1 message",
+      "trace_name": "e2e setup top up WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 44446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: INTERNAL change key::trace#5": {
+      "test_name": "test e2e full chain: INTERNAL change key",
+      "trace_name": "e2e full-chain INTERNAL change key",
+      "tx_count": 1,
+      "total_gas_used": 3965,
+      "total_gas_fees": 264334,
+      "total_forward_fees": 115913,
+      "total_fees": 264334
+    },
+    "test e2e full chain: INTERNAL send 1 message::trace#2": {
+      "test_name": "test e2e full chain: INTERNAL send 1 message",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: INTERNAL send 1 message::trace#5": {
+      "test_name": "test e2e full chain: INTERNAL send 1 message",
+      "trace_name": "e2e full-chain INTERNAL send 1",
+      "tx_count": 2,
+      "total_gas_used": 4048,
+      "total_gas_fees": 269869,
+      "total_forward_fees": 153603,
+      "total_fees": 294313
+    },
+    "test e2e full chain: EXTERNAL send 32 messages::trace#5": {
+      "test_name": "test e2e full chain: EXTERNAL send 32 messages",
+      "trace_name": "e2e full-chain EXTERNAL send 32",
+      "tx_count": 33,
+      "total_gas_used": 38762,
+      "total_gas_fees": 2584166,
+      "total_forward_fees": 1564480,
+      "total_fees": 3614642
+    },
+    "test e2e full chain: INTERNAL send 32 messages::trace#1": {
+      "test_name": "test e2e full chain: INTERNAL send 32 messages",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: EXTERNAL change key::trace#4": {
+      "test_name": "test e2e full chain: EXTERNAL change key",
+      "trace_name": "e2e setup top up WalletTg",
+      "tx_count": 1,
+      "total_gas_used": 244,
+      "total_gas_fees": 16268,
+      "total_forward_fees": 44446,
+      "total_fees": 16268
+    },
+    "test e2e full chain: EXTERNAL send 32 messages::trace#1": {
+      "test_name": "test e2e full chain: EXTERNAL send 32 messages",
+      "trace_name": "Trace 1",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    },
+    "test e2e full chain: INTERNAL send 32 messages::trace#2": {
+      "test_name": "test e2e full chain: INTERNAL send 32 messages",
+      "trace_name": "Trace 2",
+      "tx_count": 1,
+      "total_gas_used": 309,
+      "total_gas_fees": 20601,
+      "total_forward_fees": 91291,
+      "total_fees": 20601
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[package]
+name = "WalletTg"
+description = "Telegram wallet contract; bytecode stays in config and is updated by validator voting"
+version = "1.0"
+license = "MIT"
+
+[toolchain]
+acton = "trunk"
+
+[contracts.WalletTg]
+name = "WalletTg"
+src = "contracts/WalletTg/WalletTg.tolk"
+output = "contracts/revisions-boc/WalletTg-rev00.boc"
+
+[contracts.WalletTrampoline]
+name = "WalletTrampoline"
+src = "contracts/WalletTrampoline.boc"
+types = "contracts/WalletTg/WalletTg.tolk"
+
+[build]
+output-fift = "build/fift"
+
+[test]
+
+[fmt]
+width = 120
+ignore = ["contracts/**"]
+
+[scripts]
+build-trampoline = "fift -s contracts/WalletTrampoline.fif"
+deploy-emulation = "acton script scripts/deploy.tolk"
+deploy-testnet = "acton script scripts/deploy.tolk --net testnet"
+
+[lint.rules]
+name-case-checker = "allow"
+
+[import-mappings]
+acton = ".acton"
+contracts = "contracts"
+gen = "gen"
+tests = "tests"
+wrappers = "wrappers"
+
+# Check full Acton.toml reference and all available keys:
+# https://ton-blockchain.github.io/acton/docs/acton-toml
